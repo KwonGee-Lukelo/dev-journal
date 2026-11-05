@@ -18,36 +18,35 @@
           <a href="#">devJournal</a>
         </div>
 
-        <div class="toggle">
-          <input type="checkbox" id="menu__toggle" hidden />
-          <label for="menu__toggle" class="menu__btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
+        <div class="nav__links">
+          <ul id="menu">
+            <li>
+              <a href="#" class="link active">
+                <i class="ri-dashboard-line"></i>
+                Tableau de bord
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="link">
+                <i class="ri-draft-line"></i>
+                Notes
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <ul class="nav">
-          <li>
-            <a href="#" class="active">
-              <i class="ri-dashboard-line"></i>
-              Tableau de bord
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              <i class="ri-draft-line"></i>
-              Notes
-            </a>
-          </li>
-        </ul>
-
-        <a href="#" class="btn btn_account"> Créer un compte </a>
+        <div class="nav__actions">
+          <a href="#" class="nav__btn"> Se connecter </a>
+          <i class="ri-menu-3-line" onclick="openMenu()" id="menu__icon"></i>
+          <i class="ri-close-fill" onclick="closeMenu()" id="close__icon"></i>
+        </div>
       </nav>
     </header>
 
     <main></main>
     <footer></footer>
+
+    <script src="../js/app.js"></script>
   </body>
 </html>
