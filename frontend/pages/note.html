@@ -19,7 +19,7 @@
         </div>
 
         <div class="nav__links">
-          <ul id="menu">
+          <ul class="nav__menu" id="menu">
             <li>
               <a href="#" class="link active">
                 <i class="ri-dashboard-line"></i>
@@ -33,13 +33,19 @@
                 Notes
               </a>
             </li>
+
+            <li>
+              <a href="#" class="btn__login btn__login--mobile">
+                Se connecter
+              </a>
+            </li>
           </ul>
         </div>
 
         <div class="nav__actions">
-          <a href="#" class="nav__btn"> Se connecter </a>
-          <i class="ri-menu-3-line" onclick="openMenu()" id="menu__icon"></i>
-          <i class="ri-close-fill" onclick="closeMenu()" id="close__icon"></i>
+          <a href="#" class="btn__login" id="nav__btn"> Se connecter </a>
+          <i class="ri-menu-3-line" id="menu__icon"></i>
+          <i class="ri-close-fill" id="close__icon"></i>
         </div>
       </nav>
     </header>
