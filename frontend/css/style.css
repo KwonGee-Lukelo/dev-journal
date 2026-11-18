@@ -145,3 +145,115 @@ nav {
     display: none;
   }
 }
+
+/**************************************
+***********************************
+**PARTIE PRINCIPALE (MAIN)*****/
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  color: var(--color-text);
+  padding: 1rem;
+}
+
+/* AJOUTER UNE NOTE */
+.entete {
+  padding: 1.2rem 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #fffafa79;
+}
+
+.entete figcaption {
+  font-size: 1.7rem;
+  -webkit-text-stroke-width: 15%;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.entete p {
+  font-size: 1rem;
+  color: #c7c8ca;
+}
+
+/* Formulaire */
+.formulaire {
+  display: block;
+  padding: 0 1.2rem;
+  font-family: var(--font-family-label);
+  margin-top: 3rem;
+}
+
+.groupe_1,
+.groupe_3,
+.groupe_4 {
+  background-color: var(--color-secondary);
+  padding: 1.5rem 1rem;
+  border: 1px solid #fffafa79;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.groupe_1 input,
+.groupe_2 div input,
+.groupe_2 div select,
+textarea {
+  margin-top: 0.5rem;
+  background-color: var(--color-Neutral);
+  padding: 0.5rem;
+  border: 1px solid #fffafa79;
+  border-radius: 5px;
+  color: var(--color-text);
+  font-family: var(--font-family-label);
+}
+
+.groupe_2 {
+  display: grid;
+  grid-template-columns: 1fr 200px 200px;
+  gap: 2rem;
+  background-color: var(--color-secondary);
+  padding: 1.5rem 1rem;
+  border: 1px solid #fffafa79;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.groupe_2 div {
+  display: flex;
+  flex-direction: column;
+}
+
+.groupe_btn {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: right;
+}
+
+.btn_submit {
+  padding: 0.7rem 1rem;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  border: none;
+  color: var(--color-text);
+  transition: 0.3s ease-in-out;
+}
+
+.btn_reset {
+  padding: 0.7rem 1rem;
+  background-color: var(--color-Neutral);
+  border-radius: 5px;
+  color: var(--color-text);
+  border: 1px solid #fffafa79;
+  transition: 0.3s ease-in-out;
+}
+
+.btn_reset:hover {
+  cursor: pointer;
+}
+.btn_submit:hover {
+  cursor: pointer;
+  background-color: #5493f9;
+}
