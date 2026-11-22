@@ -8,7 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.min.css"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>devJouranl | note</title>
+    <title>devJournal | note</title>
   </head>
 
   <body>
@@ -59,22 +59,32 @@
       </section>
 
       <section class="formulaire">
-        <form action="" method="post">
-          <div class="groupe_1">
+        <form action="" id="theForm">
+          <div class="groupe_1" id="groupe_1">
             <label for="titre">Titre de la note</label>
-            <input type="text" name="titre" required />
+            <input type="text" name="titre" id="titreNote" />
           </div>
 
-          <div class="groupe_2">
+          <div class="groupe_2" id="groupe_2">
             <div>
               <label for="techno">Technologie/stack</label>
-              <input type="text" name="techno" required />
+              <input type="text" name="techno" id="techno" />
             </div>
 
-            <div>
+            <div id="sous_groupe_1">
+              <label for="type">Type</label>
+              <select name="type" id="typeNote">
+                <option value="">----</option>
+                <option value="concept">Concept</option>
+                <option value="solution">Solution</option>
+                <option value="bug">bug</option>
+              </select>
+            </div>
+
+            <div id="sous_groupe_2">
               <label for="status">Status</label>
-              <select name="status" required>
-                <option value="choisir status">----</option>
+              <select name="status" id="statusNote">
+                <option value="">----</option>
                 <option value="arevoir">A revoir</option>
                 <option value="maitriser">Maitriser</option>
               </select>
@@ -82,8 +92,8 @@
 
             <div>
               <label for="complex">Niveau de complexité</label>
-              <select name="complex" required>
-                <option value="choisir niveau">----</option>
+              <select name="complex" id="niveauNote">
+                <option value="">----</option>
                 <option value="debutant">débutant</option>
                 <option value="intermediaire">Intermediaire</option>
                 <option value="avance">Avancé</option>
@@ -91,14 +101,14 @@
             </div>
           </div>
 
-          <div class="groupe_3">
+          <div class="groupe_3" id="groupe_3">
             <label for="extrait">Extrait de code</label>
-            <textarea name="extrait" cols="30" rows="15" required></textarea>
+            <textarea name="extrait" cols="30" rows="15" id="code"></textarea>
           </div>
 
-          <div class="groupe_4">
+          <div class="groupe_4" id="groupe_4">
             <label for="com">Commentaire</label>
-            <textarea name="com" cols="30" rows="10"></textarea>
+            <textarea name="com" cols="30" rows="10" id="com"></textarea>
           </div>
 
           <div class="groupe_btn">
@@ -106,6 +116,7 @@
             <input
               type="submit"
               class="btn_submit"
+              id="enreg"
               value="Enregister la note"
             />
           </div>

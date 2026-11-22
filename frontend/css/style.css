@@ -211,7 +211,7 @@ textarea {
 
 .groupe_2 {
   display: grid;
-  grid-template-columns: 1fr 200px 200px;
+  grid-template-columns: 1fr repeat(3, 200px);
   gap: 2rem;
   background-color: var(--color-secondary);
   padding: 1.5rem 1rem;
@@ -223,6 +223,11 @@ textarea {
 .groupe_2 div {
   display: flex;
   flex-direction: column;
+}
+
+.message {
+  color: #f63b3b;
+  margin-top: 0.5rem;
 }
 
 .groupe_btn {
