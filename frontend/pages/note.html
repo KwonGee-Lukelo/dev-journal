@@ -59,20 +59,20 @@
       </section>
 
       <section class="formulaire">
-        <form action="" id="theForm">
+        <form action="" method="" id="theForm">
           <div class="groupe_1" id="groupe_1">
-            <label for="titre">Titre de la note</label>
+            <label for="titreNote">Titre de la note</label>
             <input type="text" name="titre" id="titreNote" />
           </div>
 
-          <div class="groupe_2" id="groupe_2">
-            <div>
+          <div class="groupe_2">
+            <div id="groupe_2">
               <label for="techno">Technologie/stack</label>
               <input type="text" name="techno" id="techno" />
             </div>
 
             <div id="sous_groupe_1">
-              <label for="type">Type</label>
+              <label for="typeNote">Type</label>
               <select name="type" id="typeNote">
                 <option value="">----</option>
                 <option value="concept">Concept</option>
@@ -82,7 +82,7 @@
             </div>
 
             <div id="sous_groupe_2">
-              <label for="status">Status</label>
+              <label for="statusNote">Status</label>
               <select name="status" id="statusNote">
                 <option value="">----</option>
                 <option value="arevoir">A revoir</option>
@@ -90,8 +90,8 @@
               </select>
             </div>
 
-            <div>
-              <label for="complex">Niveau de complexité</label>
+            <div id="sous_groupe_3">
+              <label for="niveauNote">Niveau de complexité</label>
               <select name="complex" id="niveauNote">
                 <option value="">----</option>
                 <option value="debutant">débutant</option>
@@ -102,7 +102,7 @@
           </div>
 
           <div class="groupe_3" id="groupe_3">
-            <label for="extrait">Extrait de code</label>
+            <label for="code">Extrait de code</label>
             <textarea name="extrait" cols="30" rows="15" id="code"></textarea>
           </div>
 
