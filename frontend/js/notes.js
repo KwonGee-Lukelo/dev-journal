@@ -24,6 +24,7 @@ const techno = document.getElementById("techno");
 const typeNote = document.getElementById("typeNote");
 const statut = document.getElementById("statusNote");
 const niveau = document.getElementById("niveauNote");
+const code = document.getElementById("code");
 const com = document.getElementById("com");
 
 const spanElement_1 = document.createElement("span");
@@ -161,6 +162,22 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   if (validateForm() === true) {
+    let newNote = {
+      titre: titre.value.trim(),
+      techno: techno.value.trim(),
+      type: typeNote.value.trim(),
+      statut: statut.value.trim(),
+      niveau: niveau.value.trim(),
+      code: code.value.trim(),
+      comment: com.value.trim(),
+    };
+
+    fetch("http://localhost:3000/api/note", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(newNote),
+    });
+
     alert("Envoi réussi!");
 
     titre.value = "";
@@ -168,6 +185,7 @@ form.addEventListener("submit", (e) => {
     typeNote.value = "";
     statut.value = "";
     niveau.value = "";
+    code.value = "";
     com.value = "";
   }
 });
